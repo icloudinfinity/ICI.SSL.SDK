@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICI.SSL.Core", "ICI.SSL.Core\ICI.SSL.Core.csproj", "{2CB7D310-2C40-44A4-84E7-B2BF080F9CCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICI.SSL.Core.Test", "ICI.SSL.Core.Test\ICI.SSL.Core.Test.csproj", "{A570B150-2D71-411B-A49A-4C8CFAE89EE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CB7D310-2C40-44A4-84E7-B2BF080F9CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB7D310-2C40-44A4-84E7-B2BF080F9CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB7D310-2C40-44A4-84E7-B2BF080F9CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB7D310-2C40-44A4-84E7-B2BF080F9CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A570B150-2D71-411B-A49A-4C8CFAE89EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A570B150-2D71-411B-A49A-4C8CFAE89EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A570B150-2D71-411B-A49A-4C8CFAE89EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A570B150-2D71-411B-A49A-4C8CFAE89EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C88F5B51-C8AF-45F6-A96F-EEC12AD3655E}
+	EndGlobalSection
+EndGlobal
