@@ -2,9 +2,9 @@
 {
     public interface IOrderService
     {
-        Task<Order> CreateOrderAsync(Certificate certificate);
-        Task<Order> GetOrderAsync(Certificate certificate);
-        Task ValidateOrderAsync(Certificate certificate);
-        Task FinalizeOrderAsync(Certificate certificate);
+        Task<Order> CreateOrderAsync(int subscriptionId, Certificate certificate);
+        Task<Order> GetOrderAsync(int subscriptionId, Certificate certificate);
+        Task ValidateOrderAsync(int subscriptionId, Certificate certificate);
+        Task FinalizeOrderAsync(int subscriptionId, Certificate certificate);
     }
 }

@@ -6,6 +6,5 @@ namespace ICI.SSL.Core
     {
         public string ApiEndpoint { get; set; }
         public string SubscriptionKey { get; set; }
-        public int SubscriptionId { get; set; }
     }
 }

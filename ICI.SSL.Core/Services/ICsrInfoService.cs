@@ -2,9 +2,9 @@
 {
     public interface ICsrInfoService
     {
-        Task<CsrInfo> CreateOrUpdateCsrInfoAsync(CsrInfo csrInfo);
-        Task<CsrInfo> GetCsrInfoBySubscriptionAsync();
-        Task<CsrInfo> GetCsrInfoByIdAsync(int id);
-        Task DeleteCsrInfoAsync(int id);
+        Task<CsrInfo> CreateOrUpdateCsrInfoAsync(int subscriptionId, CsrInfo csrInfo);
+        Task<CsrInfo> GetCsrInfoBySubscriptionAsync(int subscriptionId);
+        Task<CsrInfo> GetCsrInfoByIdAsync(int subscriptionId, int id);
+        Task DeleteCsrInfoAsync(int subscriptionId, int id);
     }
 }
