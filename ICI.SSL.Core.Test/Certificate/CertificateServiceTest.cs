@@ -29,7 +29,7 @@
         [TestMethod]
         public async Task GetCertificateTest()
         {
-            string certificateName = "shopeneur.com";
+            string certificateName = "contoso.com";
 
             try
             {
@@ -46,7 +46,7 @@
         [TestMethod]
         public async Task GetCertificateGloballyTest()
         {
-            string certificateName = "shopeneur.com";
+            string certificateName = "contoso.com";
 
             try
             {
@@ -63,7 +63,7 @@
         [TestMethod]
         public async Task DeleteCertificateTest()
         {
-            string certificateName = "shopeneur.com";
+            string certificateName = "contoso.com";
 
             try
             {

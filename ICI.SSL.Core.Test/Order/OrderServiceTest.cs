@@ -16,10 +16,10 @@
         {
             Certificate certificate = new Certificate
             {
-                certificateName = "shopeneur.com",
+                certificateName = "contoso.com",
                 isSAN = false,
-                rootDomain = "shopeneur.com",
-                email = "support@shopeneur.com",
+                rootDomain = "contoso.com",
+                email = "support@mail.com",
                 challengeType = "dns"
             };
 
@@ -43,7 +43,7 @@
             Certificate certificate = new Certificate
             {
                 orderUri = orderuri,
-                rootDomain = "shopeneur.com",
+                rootDomain = "contoso.com",
                 challengeType = "dns"
             };
 
@@ -85,10 +85,10 @@
         {
             Certificate certificate = new Certificate
             {
-                certificateName = "shopeneur.com",
+                certificateName = "contoso.com",
                 isSAN = false,
-                rootDomain = "shopeneur.com",
-                email = "support@shopeneur.com",
+                rootDomain = "contoso.com",
+                email = "support@mail.com",
                 password = "pwd1234",
                 orderUri = "https://acme-staging-v02.api.letsencrypt.org/acme/order/60431204/3156601004",
                 challengeType = "dns"

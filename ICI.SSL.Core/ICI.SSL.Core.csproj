@@ -4,11 +4,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.0.0</Version>
+    <Version>1.0.0-alpha</Version>
     <Authors>Anil Ripla</Authors>
     <Company>iCloud Infinity</Company>
-    <Description>A SDK to create SSL / TLS certificates using ICI SSL /TLS</Description>
+    <Description>A SDK to create SSL / TLS certificates for websites and applications using ICI SSL /TLS API</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/icloudinfinity/ICI.SSL.SDK</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
