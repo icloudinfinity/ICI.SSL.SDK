@@ -9,14 +9,14 @@ The [ICI SSL/TLS SDK](https://docs.ssl.icloudinfinity.com/sdk/sdk.html) provides
 You can install the ICI SSL/TLS SDK from NuGet.
 
 ```
-Install-Package RCL.SDK
+Install-Package ICI.SSL.Core
 ```
 
 ## Read the documentation
 
 You can read the detailed documentation on how to use the RCL SDK : 
 
-[RCL SDK Documentation](https://docs.rclapp.com/sdk/sdk.html)
+[ICI SSL/TLS SDK Documentation](https://docs.ssl.icloudinfinity.com/sdk/sdk.html)
 
 ## Contribute to this project
 
@@ -26,7 +26,7 @@ This is how you can contribute :
 
 - You need a basic understanding of Git and GitHub.com
 
-- Open an [issue](https://github.com/rcl-ssl/RCL.SDK/issues) describing what you want to do, such as fixing a bug or adding a new feature. Wait for approval before you invest much time
+- Open an [issue](https://github.com/icloudinfinity/ICI.SSL.SDK/issues) describing what you want to do, such as fixing a bug or adding a new feature. Wait for approval before you invest much time
 
 - Fork the repo of the **master** branch and create a new branch for your changes
 
