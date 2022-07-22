@@ -4,7 +4,7 @@
     public class CsrInfoTest
     {
         private readonly ICsrInfoService _csrInfoService;
-        private const int subscriptionId = 1;
+        private const int _subscriptionId = 1;
 
         public CsrInfoTest()
         {
@@ -26,7 +26,7 @@
                     subscriptionId = 1
                 };
 
-                CsrInfo newCsrInfo = await _csrInfoService.CreateOrUpdateCsrInfoAsync(subscriptionId, csrInfo);
+                CsrInfo newCsrInfo = await _csrInfoService.CreateOrUpdateCsrInfoAsync(_subscriptionId, csrInfo);
 
                 Assert.AreEqual(csrInfo.organization, newCsrInfo?.organization ?? String.Empty);
             }
@@ -53,7 +53,7 @@
                     subscriptionId = 1
                 };
 
-                CsrInfo updatedCsrInfo = await _csrInfoService.CreateOrUpdateCsrInfoAsync(subscriptionId, csrInfo);
+                CsrInfo updatedCsrInfo = await _csrInfoService.CreateOrUpdateCsrInfoAsync(_subscriptionId, csrInfo);
 
                 Assert.AreEqual(csrInfo.countryName, updatedCsrInfo?.countryName ?? String.Empty);
             }
@@ -69,7 +69,7 @@
         {
             try
             {
-                CsrInfo csrInfo = await _csrInfoService.GetCsrInfoBySubscriptionAsync(subscriptionId);
+                CsrInfo csrInfo = await _csrInfoService.GetCsrInfoBySubscriptionAsync(_subscriptionId);
 
                 Assert.AreNotEqual(String.Empty, csrInfo?.organization ?? String.Empty);
             }
@@ -85,7 +85,7 @@
         {
             try
             {
-                CsrInfo csrInfo = await _csrInfoService.GetCsrInfoByIdAsync(subscriptionId, 2);
+                CsrInfo csrInfo = await _csrInfoService.GetCsrInfoByIdAsync(_subscriptionId, 2);
 
                 Assert.AreEqual(2, csrInfo?.Id);
             }
@@ -101,7 +101,7 @@
         {
             try
             {
-                await _csrInfoService.DeleteCsrInfoAsync(subscriptionId, 2);
+                await _csrInfoService.DeleteCsrInfoAsync(_subscriptionId, 2);
 
                 Assert.AreEqual(1, 1);
             }

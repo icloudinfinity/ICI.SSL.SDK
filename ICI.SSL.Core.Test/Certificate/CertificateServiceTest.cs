@@ -4,7 +4,7 @@
     public class CertificateServiceTest
     {
         private readonly ICertificateService _certificateService;
-        private const int subscriptionId = 1;
+        private const int _subscriptionId = 1;
 
         public CertificateServiceTest()
         {
@@ -16,7 +16,7 @@
         {
             try
             {
-                List<Certificate> certificates = await _certificateService.GetCertificatesInSubscriptionAsync(subscriptionId);
+                List<Certificate> certificates = await _certificateService.GetCertificatesInSubscriptionAsync(_subscriptionId);
                 Assert.AreNotEqual(0, certificates?.Count);
             }
             catch(Exception ex)
@@ -33,7 +33,7 @@
 
             try
             {
-                Certificate certificate = await _certificateService.GetCertificateAsync(subscriptionId, certificateName);
+                Certificate certificate = await _certificateService.GetCertificateAsync(_subscriptionId, certificateName);
                 Assert.AreEqual(certificateName, certificate?.certificateName ?? string.Empty);
             }
             catch (Exception ex)
@@ -50,7 +50,7 @@
 
             try
             {
-                Certificate certificate = await _certificateService.GetCertificateGloballyAsync(subscriptionId, certificateName);
+                Certificate certificate = await _certificateService.GetCertificateGloballyAsync(_subscriptionId, certificateName);
                 Assert.AreEqual(certificateName, certificate?.certificateName ?? string.Empty);
             }
             catch (Exception ex)
@@ -67,7 +67,7 @@
 
             try
             {
-                await _certificateService.DeleteCertificateAsync(subscriptionId, certificateName);
+                await _certificateService.DeleteCertificateAsync(_subscriptionId, certificateName);
                 Assert.AreEqual(1,1);
             }
             catch (Exception ex)

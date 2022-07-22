@@ -4,7 +4,7 @@
     public class OrderServiceTest
     {
         private readonly IOrderService _orderService;
-        private const int subscriptionId = 1;
+        private const int _subscriptionId = 1;
 
         public OrderServiceTest()
         {
@@ -25,7 +25,7 @@
 
             try
             {
-                Order order = await _orderService.CreateOrderAsync(subscriptionId, certificate);
+                Order order = await _orderService.CreateOrderAsync(_subscriptionId, certificate);
                 Assert.AreNotEqual(String.Empty, order?.orderUri ?? String.Empty);
             }
             catch (Exception ex)
@@ -49,7 +49,7 @@
 
             try
             {
-                Order order = await _orderService.GetOrderAsync(subscriptionId, certificate);
+                Order order = await _orderService.GetOrderAsync(_subscriptionId, certificate);
                 Assert.AreEqual(orderuri, order?.orderUri ?? string.Empty);
             }
             catch (Exception ex)
@@ -70,7 +70,7 @@
 
             try
             {
-                await _orderService.ValidateOrderAsync(subscriptionId, certificate);
+                await _orderService.ValidateOrderAsync(_subscriptionId, certificate);
                 Assert.AreEqual(1, 1);
             }
             catch (Exception ex)
@@ -96,7 +96,7 @@
 
             try
             {
-                await _orderService.FinalizeOrderAsync(subscriptionId, certificate);
+                await _orderService.FinalizeOrderAsync(_subscriptionId, certificate);
                 Assert.AreEqual(1, 1);
             }
             catch (Exception ex)

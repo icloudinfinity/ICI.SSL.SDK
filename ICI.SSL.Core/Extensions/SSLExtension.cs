@@ -11,6 +11,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddTransient<IOrderService,OrderService>();
             services.AddTransient<ICertificateService, CertificateService>();
             services.AddTransient<ICsrInfoService, CsrInfoService>();
+            services.AddTransient<INotificationService, NotificationService>();
 
             services.Configure(setupAction);
 
